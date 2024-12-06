@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARAT</title>
+    <link rel="stylesheet" href="3. product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Passion+One:wght@400;700;900&family=Righteous&family=Satisfy&family=Spicy+Rice&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fcb8daa1d8.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<body>
+    <header>
+    <h1><strong>CARAT</strong></h1>
+    <nav class="nav">
+    <ul class="nav-links">
+        <li class="nav-link">
+            <a href="2. home.html#product">PRODUCTS</a>
+        </li>
+        <li class="nav-link">
+            <a href="2. home.html#latest">LATEST</a>
+        </li>
+        <li class="nav-link">
+            <a href="2. home.html#about-us">ABOUT US</a>
+        </li>
+        <li class="nav-link">
+            <a href="2. home.html#review">REVIEW</a>
+        </li>
+        <li class="nav-link">
+            <a href="2. home.html#contact">CONTACT US</a>
+        </li>
+    </ul>
+    </nav>
+
+    <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <script>
+        const navE1 = document.querySelector('.nav');
+        const hamburgerE1 = document.querySelector('.hamburger');
+
+        hamburgerE1.addEventListener("click", () => {
+            navE1.classList.toggle("nav--open");
+        });
+    </script>
+
+    <i class='bx bx-cart-alt' id="cart-icon" data-quantity="0"></i>
+
+    
+    <div class="cart">
+        <h2 class="cart-title">YOUR CART</h2>
+        <div class="cart-content"></div>
+        <div class="cart-actions">
+            <div class="total">                    
+                <div class="total-title">TOTAL</div>
+                <div class="total-price">RM 0.00</div>
+            </div>
+            <button onclick="document.location='4. payment.html'" type="button" class="btn-checkout">CHECK OUT</button>
+        </div>
+        <i class='bx bx-x' id="close-cart"></i>
+    </div>
+    
+    </header>
+
+    <section class="blank"></section>
+
+    <button class="btnSrcollToTop" id="btnSrcollToTop">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
+
+    
+    <section class="shop container">
+        <div class="TAB-BOX">
+            <div class="tab-box">
+                <button class="tab-btn active">CLOTHES</button>
+                <button class="tab-btn">MERCH</button>
+                <button class="tab-btn">PHOTOCARD</button>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="product-page">
+            <div class="content active">
+                <div class="filter">
+                    <div class="filter-clothes">
+                        <ul>
+                            <li class="active" data-filter="all">ALL</li>
+                            <li data-filter="scoups">S.COUPS</li>
+                            <li data-filter="jeonghan">JEONGHAN</li>
+                            <li data-filter="joshua">JOSHUA</li>
+                            <li data-filter="jun">JUN</li>
+                            <li data-filter="hoshi">HOSHI</li>
+                            <li data-filter="wonwoo">WONWOO</li>
+                            <li data-filter="woozi">WOOZI</li>
+                            <li data-filter="the8">THE8</li>
+                            <li data-filter="mingyu">MINGYU</li>
+                            <li data-filter="dk">DK</li>
+                            <li data-filter="seungkwan">SEUNGKWAN</li>
+                            <li data-filter="vernon">VERNON</li>
+                            <li data-filter="dino">DINO</li>
+                        </ul>
+                    </div>
+                </div>
+            
+
+            <div class="shop-content">
+            
+                <div class="product-box scoups">
+                    <div class="imgbox">
+                        <img class="product-img" src="CLOTHES/S.coups 4.jpg">
+                    </div>
+                    <div class="product-text">
+                        <a href="#" class="product-title">S.COUPS 1</a>
+                        <span class="price">RM76.50</span>
+                        <button type="button" class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box scoups">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/S.coups 5.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">S.COUPS 2</a>
+                        <span class="price">RM200.00</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box scoups">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/S.coups 3.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">S.COUPS 3</a>
+                        <span class="price">RM50.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box jeonghan">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Jeonghan 4.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">JEONGHAN 1</a>
+                        <span class="price">RM70.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box jeonghan">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Jeonghan 5.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">JEONGHAN 2</a>
+                        <span class="price">RM100.40</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box jeonghan">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Jeonghan 6.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">JEONGHAN 3</a>
+                        <span class="price">RM59.00</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box joshua">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Joshua 4.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">JOSHUA 1</a>
+                        <span class="price">RM229.14</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box joshua">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Joshua 2.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">JOSHUA 2</a>
+                        <span class="price">RM100.50</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box joshua">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Joshua 3.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">JOSHUA 3</a>
+                        <span class="price">RM122.31</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box jun">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Jun 1.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">JUN 1</a>
+                        <span class="price">RM60.10</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box jun">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Jun 2.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">JUN 2</a>
+                        <span class="price">RM100.60</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box jun">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Jun 5.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">JUN 3</a>
+                        <span class="price">RM216.00</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box hoshi">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Hoshi 1.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">HOSHI 1</a>
+                        <span class="price">RM50.01</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box hoshi">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Hoshi 2.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">HOSHI 2</a>
+                        <span class="price">RM77.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box hoshi">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Hoshi 3.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">HOSHI 3</a>
+                        <span class="price">RM170.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box wonwoo">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Wonwoo 1.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">WONWOO 1</a>
+                        <span class="price">RM80.10</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box wonwoo">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Wonwoo 2.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">WONWOO 2</a>
+                        <span class="price">RM84.40</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box wonwoo">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Wonwoo 3.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">WONWOO 3</a>
+                        <span class="price">RM90.00</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box woozi">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Woozi 1.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">WOOZI 1</a>
+                        <span class="price">RM100.70</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box woozi">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Woozi 2.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">WOOZI 2</a>
+                        <span class="price">RM177.77</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box woozi">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Woozi 3.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">WOOZI 3</a>
+                        <span class="price">RM90.10</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box the8">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/The8 1.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">THE8 1</a>
+                        <span class="price">RM100.80</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box the8">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/The8 2.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">THE8 2</a>
+                        <span class="price">RM150.90</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box the8">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/The8 3.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">THE8 3</a>
+                        <span class="price">RM220.00</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box mingyu">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Mingyu 1.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">MINGYU 1</a>
+                        <span class="price">RM80.50</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box mingyu">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Mingyu 2.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">MINGYU 2</a>
+                        <span class="price">RM220.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box mingyu">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Mingyu 3.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">MINGYU 3</a>
+                        <span class="price">RM190.77</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box dk">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Dk 4.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">DK 1</a>
+                        <span class="price">RM110.10</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box dk">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Dk 2.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">DK 2</a>
+                        <span class="price">RM80.10</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box dk">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Dk 3.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">DK 3</a>
+                        <span class="price">RM100.80</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box seungkwan">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Sk 5.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">SEUNGKWAN 1</a>
+                        <span class="price">RM230.00</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box seungkwan">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Sk 2.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">SEUNGKWAN 2</a>
+                        <span class="price">RM58.90</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box seungkwan">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Sk 3.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">SEUNGKWAN 3</a>
+                        <span class="price">RM90.70</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box vernon">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Vernon 1.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">VERNON 1</a>
+                        <span class="price">RM170.00</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box vernon">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Vernon 2.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">VERNON 2</a>
+                        <span class="price">RM100.00</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="product-box vernon">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Vernon 3.jpeg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">VERNON 3</a>
+                        <span class="price">RM70.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box dino">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Dino 1.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">DINO 1</a>
+                        <span class="price">RM220.90</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box dino">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Dino 2.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">DINO 2</a>
+                        <span class="price">RM177.70</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box dino">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CLOTHES/Dino 3.jpg">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">DINO 3</a>
+                        <span class="price">RM190.00</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>    
+            </div>
+            </div>
+
+            <div class="content">
+                <div class="filter">
+                    <div class="filter-merch">
+                        <ul>
+                            <li class="active" data-filter="all">ALL</li>
+                            <li data-filter="album">ALBUM</li>
+                            <li data-filter="ass">ACCESSORY</li>
+                            <li data-filter="md">MEMBERS DESIGN</li>
+                            <li data-filter="p">PLUSH</li>
+                        </ul>
+                    </div>
+                </div>
+            
+
+            <div class="shop-content">
+            
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/消费期限 LIMITED EDITION.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">消费期限 LIMITED EDITION</a>
+                        <span class="price">RM76.50</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/17 CARAT.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">17 CARAT</a>
+                        <span class="price">RM40.03</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/17 IS RIGHT HERE.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">17 IS RIGHT HERE</a>
+                        <span class="price">RM252.85</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/2-cut Photo.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">2-cut Photo</a>
+                        <span class="price">RM26.66</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/24H.jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">24H</a>
+                        <span class="price">RM111.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/4-cuts photo binder set.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">4-cuts photo binder set</a>
+                        <span class="price">RM88.88</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Acrylic Keyring Set.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Acrylic Stand</a>
+                        <span class="price">RM84.44</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Acrylic Stand.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Acrylic Stand</a>
+                        <span class="price">RM84.44</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Airpods Case.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Airpods Case</a>
+                        <span class="price">RM106.67</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/ALWAYS YOURS.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">ALWAYS YOURS</a>
+                        <span class="price">RM102.21</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Attacca.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Attacca</a>
+                        <span class="price">RM106.65</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Badge Set.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">BADGE SET</a>
+                        <span class="price">RM44.44</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Bath bomb set.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Bath bomb set</a>
+                        <span class="price">RM106.65</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Best friend set.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Best friend set</a>
+                        <span class="price">RM62.21</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/BOYS BE.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">BOYS BE</a>
+                        <span class="price">RM102.21</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Bucket Hat (Black).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Bucket Hat (Black)</a>
+                        <span class="price">RM182.23</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Bucket hat (yellow).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Bucket hat (yellow)</a>
+                        <span class="price">RM182.23</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Chain charm.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Chain charm</a>
+                        <span class="price">RM93.32</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Deco Mobile.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Decoration Mobile</a>
+                        <span class="price">RM102.22</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/S.Coups B.A.R Umbrella.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">S.Coups B.A.R Umbrella</a>
+                        <span class="price">RM142.21</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/S.Coups Domino Glasses set.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">S.Coups Domino Glasses set</a>
+                        <span class="price">RM226.65</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/JH Pluffy Toram & Blacket Set.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Jeonghan Pluffy Toram & Blacket Set</a>
+                        <span class="price">RM239.98</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md p">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/JH Toram on the moon.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Jeonghan Toram on the moon</a>
+                        <span class="price">RM253.31</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/JOSHUA Pulse-Pause Perfume Diy Kit.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">JOSHUA Pulse-Pause Perfume Diy Kit</a>
+                        <span class="price">RM271.09</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Jun O.C.L Phonecase set.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Jun O.C.L Phonecase set</a>
+                        <span class="price">RM217.76</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/JUN O.C.L Keyring Set.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">JUN O.C.L Keyring Set</a>
+                        <span class="price">RM217.76</RM217></span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Hoshi Incense Holder.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Hoshi Incense Holder</a>
+                        <span class="price">RM159.97</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md ">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Hoshi Plush Keyring.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Hoshi Plush Keyring</a>
+                        <span class="price">RM119.98</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md p">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Hoshi Plush Toy.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Hoshi Plush Toy</a>
+                        <span class="price">RM239.97</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Wonwoo Love Packed Cross Bag.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Wonwoo Love Packed Cross Bag</a>
+                        <span class="price">RM324.41</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Wonwoo Love Packed Keyboard.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Wonwoo Love Packed Keyboard</a>
+                        <span class="price">RM439.96</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Woozi Ppyoppyoticon rice bowl set.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Woozi Ppyoppyoticon rice bowl set</a>
+                        <span class="price">RM217.76</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Woozi Universe Factory Rug.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Woozi Universe Factory Rug</a>
+                        <span class="price">RM226.64</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/The 8 Cozy Set.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">The 8 Cozy Set</a>
+                        <span class="price">RM240.19</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/The 8 Tea Time Set.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">The 8 Tea Time Set</a>
+                        <span class="price">RM239.97</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Mingyu Pan.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Mingyu Pan</a>
+                        <span class="price">RM204.42</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Mingyu Pot.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Mingyu Pot</a>
+                        <span class="price">RM239.98</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Mingyu Robe.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Mingyu Robe</a>
+                        <span class="price">RM431.00</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/DK's angle photobook.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">DK's angle photobook</a>
+                        <span class="price">RM164.42</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Sk Booseungkwalsa.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">SEUNGKWAN Booseungkwalsa</a>
+                        <span class="price">RM137.76</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Sk Sports bag.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">SEUNGKWAN Sports bag</a>
+                        <span class="price">RM359.96</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Vernon Hansol's cup.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Vernon Hansol's cup</a>
+                        <span class="price">RM128.87</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Vernon Hansol's vase.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Vernon Hansol's vase</a>
+                        <span class="price">RM142.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Dino Black Night Candle.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Dino Black Night Candle</a>
+                        <span class="price">RM151.09</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box md">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Dino White Glasses set.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Dino White Glasses set</a>
+                        <span class="price">RM137.76</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/S.COUPS NECKLACE.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">S.COUPS NECKLACE</a>
+                        <span class="price">RM142.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/JH NECKLACE.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">JEONGHAN NECKLACE</a>
+                        <span class="price">RM142.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/JOSHUA NECKLACE.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">JOSHUA NECKLACE</a>
+                        <span class="price">RM142.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/JUN NECKLACE.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">JUN NECKLACE</a>
+                        <span class="price">RM142.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/HOSHI NECKLACE.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">HOSHI NECKLACE</a>
+                        <span class="price">RM142.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/WW NECKLACE.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">WONWOO NECKLACE</a>
+                        <span class="price">RM142.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/WOOZI NECKLACE.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">WOOZI NECKLACE</a>
+                        <span class="price">RM142.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/THE8 NECKLACE.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">THE8 NECKLACE</a>
+                        <span class="price">RM142.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/MINGYU NECKLACE.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">MINGYU NECKLACE</a>
+                        <span class="price">RM142.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/DK NECKLACE.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">DK NECKLACE</a>
+                        <span class="price">RM142.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/SK NECKLACE.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">SEUNGKWAN NECKLACE</a>
+                        <span class="price">RM142.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/VERNON NECKLACE.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">VERNON NECKLACE</a>
+                        <span class="price">RM142.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/DINO NECKLACE.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">DINO NECKLACE</a>
+                        <span class="price">RM142.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/DIY ACRYLIC KEYCHAIN (FEEL YOU VER).png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">DIY ACRYLIC KEYCHAIN (FEEL YOU VER)</a>
+                        <span class="price">RM115.62</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Dream.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Dream</a>
+                        <span class="price">RM71.10</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Face the sun.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Face the sun</a>
+                        <span class="price">RM362.57</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/FML.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">FML</a>
+                        <span class="price">RM213.52</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Heng garae.jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Heng garae</a>
+                        <span class="price">RM53.32</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/HITORIJANAI.jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">HITORIJANAI</a>
+                        <span class="price">RM57.19</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box p">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Insomnia-zero cushion.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Insomnia-zero cushion</a>
+                        <span class="price">RM88.96</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Instant Photo Sticker Card.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Instant Photo Sticker Card</a>
+                        <span class="price">RM22.22</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Keyring.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Keyring</a>
+                        <span class="price">RM71.11</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Lenticular Poster.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Lenticular Poster</a>
+                        <span class="price">RM40.00</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Luggage Tag.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Luggage TaG</a>
+                        <span class="price">RM66.66</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Mini Cardholder.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Mini Cardholder</a>
+                        <span class="price">RM31.11</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Mini Picket Keyring.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Mini Picket Keyring</a>
+                        <span class="price">RM48.89</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Mug.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Mug</a>
+                        <span class="price">RM71.10</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Multi Pouch.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Multi Pouch</a>
+                        <span class="price">RM133.32</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/PC BINDER.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">PHOTOCARD BINDER</a>
+                        <span class="price">RM155.64</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Phone Necklace.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Phone Necklace</a>
+                        <span class="price">RM84.44</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Plaster Ornament.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Plaster Ornament</a>
+                        <span class="price">RM93.32</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box p">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Plush Toy.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Plush Toy</a>
+                        <span class="price">RM71.11</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Power of love.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Power of love</a>
+                        <span class="price">RM75.54</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Pouch 2.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Pouch</a>
+                        <span class="price">RM53.33</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Second Wind.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Second Wind</a>
+                        <span class="price">RM66.65</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Semicolon.jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Semicolon</a>
+                        <span class="price">RM62.21</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/SEVENTEENTH HEAVEN.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">SEVENTEENTH HEAVEN</a>
+                        <span class="price">RM226.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div> 
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Shoulder Mini Bag.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Shoulder Mini Bag</a>
+                        <span class="price">RM128.89</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Silver Scrunchie.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Silver Scrunchie</a>
+                        <span class="price">RM84.43</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/SPILL THE FEELS.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">SPILL THE FEELS</a>
+                        <span class="price">RM222.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/SVT NECKLACE.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">SVT NECKLACE</a>
+                        <span class="price">RM142.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/THIS MAN T-SHIRT.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">THIS MAN T-SHIRT</a>
+                        <span class="price">RM182.20</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/THIS MAN.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">THIS MAN</a>
+                        <span class="price">RM66.00</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Towel.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Towel</a>
+                        <span class="price">RM48.88</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box ass">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Trading Card Binder.png" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Trading Card Binder</a>
+                        <span class="price">RM31.13</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="MERCH N ALBUM/Your Choice.jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">Your Choice</a>
+                        <span class="price">RM195.51</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="content">
+                <div class="filter">
+                    <div class="filter-card">
+                        <ul>
+                            <li class="active" data-filter="all">ALL</li>
+                            <li data-filter="s">SINGLE</li>
+                            <li data-filter="u">UNIT</li>
+                            <li data-filter="c">COMEBACK</li>
+                        </ul>
+                    </div>
+                </div>
+            
+
+            <div class="shop-content">
+            
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/ALWAYS YOURS (VER 1).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">ALWAYS YOURS (VER 1)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/ALWAYS YOURS (VER 2).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">ALWAYS YOURS (VER 2)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/ALWAYS YOURS (VER 3).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">ALWAYS YOURS (VER 3)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/ALWAYS YOURS (VER 4).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">ALWAYS YOURS (VER 4)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/ALWAYS YOURS (VER 5).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">ALWAYS YOURS (VER 5)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/DARLING (VER 1).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">DARLING</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/DREAM (VER 1).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">DREAM</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/FML (VER 1).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">FML (VER 1)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/FML (VER 2).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">FML (VER 2)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/FML (VER 3).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">FML (VER 3)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/FML (VER 4).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">FML (VER 4)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/GOING SEVENTEEN.jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">GOING SEVENTEEN</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/HEAVEN (VER 1).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">HEAVEN (VER 1)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/HEAVEN (VER 2).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">HEAVEN (VER 2)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/HEAVEN ( VER 3).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">EAVEN (VER 3)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/HEAVEN (VER 4).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">HEAVEN (VER 4)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/HEAVEN (VER 5).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">HEAVEN (VER 5)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/HEAVEN (VER 6).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">HEAVEN (VER 6)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/HEAVEN (VER 7).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">HEAVEN (VER 7)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box u">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/HIPHOP UNIT.jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">HIPHOP UNIT</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box s">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/HOSHI.jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">HOSHI</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/IS RIGHT HERE (VER.1).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">IS RIGHT HERE (VER.1)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/IS RIGHT HERE (VER 2).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">IS RIGHT HERE (VER 2)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/IS RIGHT HERE (VER 3).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">IS RIGHT HERE (VER 3)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box s">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/JEONGHAN.jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">JEONGHAN</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box s">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/JOSHUA.jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">JOSHUA</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box s">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/JUN.jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">JUN</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box s">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/MINGYU.jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">MINGYU</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box u">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/PERFORM UNIT.jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">PERFORM UNIT</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box s">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/S.COUPS.jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">S.COUPS</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/SECTOR 17 (VER 1).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">SECTOR 17</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box c">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/SUPER.jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">SUPER</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/SEVENTEEN (Holographic ver 2).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">SEVENTEEN (Holographic ver)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box album">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/SEVENTEEN (2024 Season).jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">SEVENTEEN (2024 Season)</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box s">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/THE8.jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">THE8</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box s">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/WONWOO.jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">WONWOO</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-box u">
+                    <a href="#" class="imgbox">
+                        <img class="product-img" src="CARDS/VOCAL UNIT.jpg" alt="">
+                    </a>
+                    <div class="product-text">
+                        <a href="#" class="product-title">VOCAL UNIT</a>
+                        <span class="price">RM5.17</span>
+                        <button class="add-cart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+    </div>
+    </section>
+    
+    <script src="3. product.js"></script>
+    <script src="jquery-3.7.1 (1).js"></script>
+    <script>
+        const btnSrcollToTop = document.querySelector("#btnSrcollToTop");
+
+        btnSrcollToTop.addEventListener("click", function(){
+            window.scrollTo(0,0);
+
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            });
+
+            $("html, body").animate({scrollTop: 0}, "slow");
+        });
+
+        const tabs= document.querySelectorAll('.tab-btn');
+        const all_content= document.querySelectorAll('.content');
+
+        tabs.forEach((tab, index)=>{
+            tab.addEventListener('click',(e)=>{
+                tabs.forEach(tab=>{tab.classList.remove('active')});
+                tab.classList.add('active');
+
+                var line = document.querySelector('.line');
+            line.style.width = e.target.offsetWidth + "px";
+            line.style.left = e.target.offsetLeft + "px";
+
+            all_content.forEach(content=>{content.classList.remove('active')});
+            all_content[index].classList.add('active');
+
+            const filterList = all_content[index].querySelector(".filter"); 
+            // Get the <ul> element
+                if (filterList) {
+	const listItems = filterList.querySelectorAll("li"); // Get all <li> inside .filter
+
+	listItems.forEach((item) => {
+		const attr = item.getAttribute("data-filter");
+		if (attr === "all") {
+			item.classList.add("active");
+			$(document).ready(function(){
+				$(".product-box").show('1000');
+			})
+
+        }else{
+            item.classList.remove("active"); 	
+		}
+	});
+    }
+            });
+        });
+
+        var selector = '.filter li';
+            
+            $(selector).on('click',function(){
+                $(selector).removeClass('active')
+                $(this).addClass('active')
+            });
+
+            $(document).ready(function(){
+                $('.filter li').click(function(){
+                    const value = $(this).attr('data-filter');
+                    if(value == 'all'){
+                        $('.product-box').show('1000');
+                    }
+                    else{
+                        $('.product-box').not('.'+value).hide('1000');
+                        $('.product-box').filter('.'+value).show('1000');
+                    }
+                });
+            });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+* {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background-image: linear-gradient(to right bottom,#f3a3b3 100px, rgb(132, 146, 228));
+    padding-bottom: 70px;
+}
+.container form {
+    padding: 20px;
+    width: 700px;
+    background: #fff;
+    box-shadow: 0 5px 10px #000(0,0,0,.1);
+    border-radius: 30px;
+}
+.container form .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.container form .row .col {
+    flex: 1 1 250px;
+}
+.container form .row .col .title {
+    font-size: 20px;
+    color: #141212;
+    padding-bottom: 5px;
+}   
+.container form .row .col .inputBox {
+    margin: 15px 0;
+}
+.container form .row .col .inputBox span{
+    margin-bottom: 5px;
+    display: block;
+}
+.container img {
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+.container form .row .col .inputBox input {
+    width: 100%;
+    border: 1px solid #b4b4b4;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+    border-radius: 10px;
+}
+.container form .row .col .inputBox input:focus {
+    border: 1px solid #000;
+}
+.container form .row .col .flex {
+    display: flex;
+    gap: 15px;
+}
+.container form .row .col .flex .inputBox {
+    margin-top: 5px;
+}
+.container form .submit-btn {
+    border-radius: 15px;
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: #929dff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.container form .submit-btn:hover {
+    background: #5e68bd;
+}
+.popup {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup img {
+    width: 100px;
+    margin-top: -50px;
+    border: 50%;
+    box-shadow: 0 2px 5px #00000033;
+}
+.popup h2 {
+    font-size: 38px;
+    margin: 30px 0 10px;
+}
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px #00000033;
+}

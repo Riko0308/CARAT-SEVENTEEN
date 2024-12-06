@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Passion+One:wght@400;700;900&family=Righteous&family=Satisfy&family=Spicy+Rice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="4. payment.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="5. success.html">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Billing Address</h3>
+                    <div class="inputBox">
+                        <span>Full Name :</span>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="inputBox">
+                        <span>Email :</span>
+                        <input type="email" placeholder="xxxx.@gmail.com">
+                    </div>
+                    <div class="inputBox">
+                        <span>Address :</span>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="inputBox">
+                        <span>City :</span>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>State :</span>
+                            <input type="text" placeholder="">
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <span>Postcode :</span>
+                        <input type="text" placeholder="">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3 class="title">Payment</h3>
+                    <div class="inputBox">
+                        <span>Cards accepted :</span>
+                        <img src="BG/card logo.jpg" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>Name on card :</span>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="inputBox">
+                        <span>Number on card:</span>
+                        <input type="number" placeholder="">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="">
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Proceed to checkout" class="submit-btn">
+        </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function validation() {
+            let submit = document.querySelector(".submit-btn");
+
+            submit.onclick = () => {
+                Swal.submit({
+                icon: "success",
+                title: "PAYMENT IN PROGRESS...",
+                text: "We'll send an email to you once payment is done. Thanks for choosing CARAT!",
+                footer: '<a href="index.html">BACK TO HOME</a>'
+                });
+            };
+        }
+    </script>
+</body>
+</html>

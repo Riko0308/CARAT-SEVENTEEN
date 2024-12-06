@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARAT</title>
+    <link rel="stylesheet" href="2. home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Passion+One:wght@400;700;900&family=Righteous&family=Satisfy&family=Spicy+Rice&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fcb8daa1d8.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<body>
+    <header>
+    <h1><strong>CARAT</strong></h1>
+    <nav class="nav">
+    <ul class="nav-links">
+        <li class="nav-link">
+            <a href="#product" class="link">PRODUCTS</a>
+        </li>
+        <li class="nav-link">
+            <a href="#latest" class="link">LATEST</a>
+        </li>
+        <li class="nav-link">
+            <a href="#about-us" class="link">ABOUT US</a>
+        </li>
+        <li class="nav-link">
+            <a href="#review" class="link">REVIEW</a>
+        </li>
+        <li class="nav-link">
+            <a href="#contact" class="link">CONTACT US</a>
+        </li>
+    </ul>
+    </nav>
+
+    <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    </header>
+    <script>
+        const navE1 = document.querySelector('.nav');
+        const hamburgerE1 = document.querySelector('.hamburger');
+
+        hamburgerE1.addEventListener("click", () => {
+            navE1.classList.toggle("nav--open");
+        });
+    </script>
+    <main>
+        <section class="home">
+            <video class="video-slide active" src="BG/OT13.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="BG/HIPHOP.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="BG/PERFORM.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="BG/VOCAL.mp4" autoplay muted loop></video>
+            
+            <div class="content active">
+                <h2><strong>SEVENTEEN</strong></h2>
+                <p>S.COUPS  JEONGHAN  JOSHUA  JUN  HOSHI  WONWOO  WOOZI  THE8  MINGYU  DK  SEUNGKWAN  VERNON  DINO</p>
+                <h4><strong>Say the name, SEVENTEEN!</strong></h4>
+                <a href="3. product.html">SHOP</a>
+            </div>
+        
+            <div class="content">
+                <h2><strong>HIP HOP UNIT</strong></h2>
+                <p>S.COUPS  WONWOO  MINGYU  VERNON</p>
+                <h4><strong>WE WON'T STOP I'M LALALI!</strong></h4>
+                <a href="3. product.html">SHOP</a>
+            </div>
+        
+            <div class="content">
+                <h2><strong>PERFORMANCE UNIT</strong></h2>
+                <p>JUN  HOSHI  THE8  DINO</p>
+                <h4><strong>YEOGI OCEAN VIEW</strong></h4>
+                <a href="3. product.html">SHOP</a>
+            </div>
+        
+            <div class="content">
+                <h2><strong>VOCAL UNIT</strong></h2>
+                <p>JEONGHAN JOSHUA WOOZI DK SEUNGKWAN </p>
+                <h4><strong>CHEERS TO OUR YOUTH</strong></h4>
+                <a href="3. product.html">SHOP</a>
+            </div>
+        
+            <div class="slider-navigation">
+                <div class="nav-btn active"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+            </div>
+    </section>
+    
+    <script type="text/javascript">
+            
+    //Javascript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+    
+    var sliderNav = function(manual){
+        btns.forEach((btn) => {
+           btn.classList.remove("active"); 
+        }); 
+
+        slides.forEach((slide) => {
+           slide.classList.remove("active"); 
+        });
+    
+        contents.forEach((content) => {
+           content.classList.remove("active"); 
+        });
+    
+        btns[manual].classList.add("active");
+        slides[manual].classList.add("active");
+        contents[manual].classList.add("active");
+    }
+    
+    btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+            sliderNav(i);
+        });
+    });
+    </script>
+
+    <section class="content-body">
+        <section id="product">
+        <section class="product-header">
+                <h3>Products</h3>
+            </div>
+
+            <section class="grid-product">
+                <div class="product-grid-box product-grid-box1">
+                    <img src="BG/CLOTHES.png">
+                    <div class="product-grid-text">
+                        <strong>CLOTHES</strong>
+                        <span>Wear the same clothes with your bias!</span>
+                    </div>
+                </div>
+
+                <div class="product-grid-box product-grid-box2">
+                    <img src="BG/LIGHTSTICK.png">
+                    <div class="product-grid-text">
+                        <strong>MERCH</strong>
+                        <span>Get official SEVENTEEN merch!</span>
+                    </div>
+                </div>
+
+                <div class="product-grid-box product-grid-box3">
+                    <img src="BG/CARD.png">
+                    <div class="product-grid-text">
+                        <strong>PHOTOCARD</strong>
+                        <span>Bring your bias's card everywhere!</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="BUTON">
+                <form action="3. product.html">
+                    <button>INTERESTED? COME AND SHOP NOW!</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="latest">
+            <div class="new-p-heading">
+                <h3>Latest Products</h3>
+                <ul>
+                    <li class="active" data-filter="all">All</li>
+                    <li data-filter="clothes">Clothes</li>
+                    <li data-filter="merch">Merch</li>
+                    <li data-filter="album">Album</li>
+                </ul>
+            </div>
+
+            <div class="latest-product-container">
+                
+                <div class="latest-product-box album">
+                    <a href="#" class="latest-product-img">
+                        <img src="MERCH N ALBUM/消费期限 LIMITED EDITION.png" alt="">
+                    </a>
+                    <div class="latest-product-text">
+                        <a href="#" class="latest-product-title">消费期限 SHOHEKIGEN LIMITED ALBUM</a>
+                        <span>RM76.50</span>
+                    </div>
+                </div>
+                
+                <div class="latest-product-box album">
+                    <a href="#" class="latest-product-img">
+                        <img src="MERCH N ALBUM/SPILL THE FEELS.png" alt="">
+                    </a>
+                    <div class="latest-product-text">
+                        <a href="#" class="latest-product-title">12th Mini Album 'SPILL THE FEELS' (Set)</a>
+                        <span>RM222.17</span>
+                    </div>
+                </div>
+
+                <div class="latest-product-box merch">
+                    <a href="#" class="latest-product-img">
+                        <img src="MERCH N ALBUM/Acrylic Keyring Set.png" alt="">
+                    </a>
+                    <div class="latest-product-text">
+                        <a href="#" class="latest-product-title">Acrylic Keyring Set</a>
+                        <span>RM84.44</span>
+                    </div>
+                </div>
+
+                <div class="latest-product-box merch">
+                    <a href="#" class="latest-product-img">
+                        <img src="MERCH N ALBUM/Lenticular Poster.png" alt="">
+                    </a>
+                    <div class="latest-product-text">
+                        <a href="#" class="latest-product-title">Lenticular Poster</a>
+                        <span>RM40.00</span>
+                    </div>
+                </div>
+
+                <div class="latest-product-box merch">
+                    <a href="#" class="latest-product-img">
+                        <img src="MERCH N ALBUM/Trading Card Binder.png" alt="">
+                    </a>
+                    <div class="latest-product-text">
+                        <a href="#" class="latest-product-title">Trading Card Set</a>
+                        <span>RM31.13</span>
+                    </div>
+                </div>
+
+                <div class="latest-product-box merch">
+                    <a href="#" class="latest-product-img">
+                        <img src="MERCH N ALBUM/2-cut Photo.png" alt="">
+                    </a>
+                    <div class="latest-product-text">
+                        <a href="#" class="latest-product-title">2-cut Photo</a>
+                        <span>RM26.66</span>
+                    </div>
+                </div>
+
+                <div class="latest-product-box merch">
+                    <a href="#" class="latest-product-img">
+                        <img src="MERCH N ALBUM/Instant Photo Sticker Card.png" alt="">
+                    </a>
+                    <div class="latest-product-text">
+                        <a href="#" class="latest-product-title">Instant Photo Sticker Card</a>
+                        <span>RM22.22</span>
+                    </div>
+                </div>
+
+                <div class="latest-product-box clothes">
+                    <a href="#" class="latest-product-img">
+                        <img src="CLOTHES/Jeonghan 5.jpg" alt="">
+                    </a>
+                    <div class="latest-product-text">
+                        <a href="#" class="latest-product-title">JEONGHAN 2</a>
+                        <span>RM50.00</span>
+                    </div>
+                </div>
+
+                <div class="latest-product-box clothes">
+                    <a href="#" class="latest-product-img">
+                        <img src="CLOTHES/Dino 1.jpg" alt="">
+                    </a>
+                    <div class="latest-product-text">
+                        <a href="#" class="latest-product-title">DINO 1</a>
+                        <span>RM40.00</span>
+                    </div>
+                </div>
+
+                <div class="latest-product-box clothes">
+                    <a href="#" class="latest-product-img">
+                        <img src="CLOTHES/Jun 5.jpg" alt="">
+                    </a>
+                    <div class="latest-product-text">
+                        <a href="#" class="latest-product-title">JUN 3</a>
+                        <span>RM55.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="jquery-3.7.1 (1).js"></script>
+
+        <script>
+            var selector = '.new-p-heading li';
+
+            $(selector).on('click',function(){
+                $(selector).removeClass('active')
+                $(this).addClass('active')
+            });
+
+            $(document).ready(function(){
+                $('.new-p-heading li').click(function(){
+                    const value = $(this).attr('data-filter');
+                    if(value == 'all'){
+                        $('.latest-product-box').show('1000');
+                    }
+                    else{
+                        $('.latest-product-box').not('.'+value).hide('1000');
+                        $('.latest-product-box').filter('.'+value).show('1000');
+                    }
+                });
+            });
+        </script>
+
+            <section class="about-us" id="about-us">
+
+            <div class="intro">
+                <h2><strong>WHY CHOOSE CARAT?</strong></h2>
+                <p>CARAT IS A FANNAME OF THE POPULAR K-POP GROUP--<strong>SEVENTEEN!</strong><br>Our objective is to provide best-quality SEVENTEEN product to CARATS! From ALBUMS and MERCH to PHOTOCARD, our premium selection delivers SEVENTEEN collectibles with worldwide shipping!</p>
+            </div>
+            <img src="BG/BONGBONGIE.png" alt="BONGBONGIE">
+            </section>
+
+            <section id="review">
+
+                <div class="comments">
+                    <h2>Carats says</h2>
+                </div>
+
+                <div class="review-box-container">
+                    <div class="review-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="BG/R-1.jpeg" alt="">
+                                </div>
+                                <div class="user-name">
+                                    <strong>MOON JUNNIE</strong>
+                                    <span>@ocljun0610</span>
+                                </div>
+                            </div>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>The product quality is so good! The seller is very friendly!</p>
+                        </div>
+                    </div>
+
+                    <div class="review-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="BG/R-3.jpg" alt="">
+                                </div>
+                                <div class="user-name">
+                                    <strong>PABOYA</strong>
+                                    <span>@universe.factory</span>
+                                </div>
+                            </div>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>I totally don't regret buying their products! Love it!</p>
+                        </div>
+                    </div>
+                    <div class="review-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="BG/R-2.jpg" alt="">
+                                </div>
+                                <div class="user-name">
+                                    <strong>SHUA</strong>
+                                    <span>@jisoohonggg</span>
+                                </div>
+                            </div>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>Fast delivery! The product arrived in good position, happy with it!</p>
+                        </div>
+                    </div>
+                    <div class="review-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="BG/R-4.webp" alt="">
+                                </div>
+                                <div class="user-name">
+                                    <strong>COUPS</strong>
+                                    <span>@misshanni</span>
+                                </div>
+                            </div>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <p>Fast shipping! Received it right after 4 days I placed my order!</p>
+                        </div>
+                    </div>
+                
+                </div>
+            </section>
+    </section>
+
+            <div class="contact" id="contact" >
+                <div class="contact-info ">
+                <h3>GET IN TOUCH</h3> 
+                <p>We care about our customers<br>you can contact us for any feedback</p>
+                <h4>Follow Us </h4>
+                <a href="https://www.facebook.com/seventeennews?mibextid=ZbWKwL">
+                    <i class='bx bxl-facebook-square' ></i>
+                </a>
+                <a href="https://www.instagram.com/saythename_17?igsh=MTVzZjk3ZmFmZTljcw==">
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+                <a href="https://www.youtube.com/@pledis17">
+                    <i class='bx bxl-youtube' ></i>
+                </a>
+                </div>
+
+                <div class="contact-info" >
+                    <h3>OPENING HOURS</h3>
+                        <p>Mon - Sat 7am - 9pm:</p>
+                        <p>Opening on Morning | Off at afternoon</p>
+                        <p>Delivery only on opening hours</p>
+                        <br>
+                        <div class="info">
+                        <h4>CONTACT INFO</h4>
+                        <p><i class='bx bx-phone'></i>763-957-6781</p>
+                        <p><i class='bx bxl-whatsapp'></i>706-734-2591</p>   
+                </div>
+            </div>
+
+    </main>
+    <footer>
+        <p>COPYRIGHT 2024 CARATS HEAVEN All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
